@@ -22,7 +22,13 @@ weatherForm.addEventListener('submit', (e) => {
             messageOne.textContent = data.error;
         } else {
             messageOne.textContent = data.location;
-            messageTwo.textContent = data.forecast;
+            messageTwo.textContent = data.temperature;
+            messageTwo.textContent += data.forecast;
+            messageTwo.textContent += data.dailyHigh;
+            messageTwo.textContent += data.dailyLow;
+            messageTwo.textContent += data.precip;
+            
+
         }
     });
 });

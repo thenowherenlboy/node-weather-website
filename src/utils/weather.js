@@ -18,6 +18,9 @@ const weather = (latitude, longitude, callback) => {
                 summary: current.summary,
                 weekForecast: daily.summary,
                 precipProb: daily.data[0].precipProbability,
+                dailyHigh: daily.data[0].temperatureHigh,
+                dailyLow: daily.data[0].temperatureLow,
+
             });
         }
     }); 

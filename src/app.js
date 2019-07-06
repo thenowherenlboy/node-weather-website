@@ -60,8 +60,11 @@ app.get('/weather', (req, res) => {
                     res.send( {
                             location,
                             address: req.query.address,
-                            forecast: data.weekForecast,
-                            temperature: data.currentTemp,
+                            forecast: data.weekForecast + ' ',
+                            temperature: 'It is currently ' + data.currentTemp + ' degrees F. ',
+                            dailyHigh: 'Today\'s high is: ' +data.dailyHigh + '. ',
+                            dailyLow: 'Today\'s low is: ' + data.dailyLow + '. ',
+                            precip: 'There is a ' + (100 * data.precipProb) + '% chance of rain.'
 
                         });
                     };
