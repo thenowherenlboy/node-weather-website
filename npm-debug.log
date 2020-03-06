@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'bugs', 'web-server' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly fetchPackageMetaData web-server
+5 silly fetchNamedPackageData web-server
+6 silly mapToRegistry name web-server
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npmjs.org/
+9 silly mapToRegistry uri https://registry.npmjs.org/web-server
+10 verbose request uri https://registry.npmjs.org/web-server
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 1:45:43 PM
+13 verbose request id 72c6a6c4d08c4610
+14 http request GET https://registry.npmjs.org/web-server
+15 http 200 https://registry.npmjs.org/web-server
+16 verbose headers { date: 'Fri, 06 Mar 2020 13:45:44 GMT',
+16 verbose headers   'content-type': 'application/json',
+16 verbose headers   'transfer-encoding': 'chunked',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'set-cookie':
+16 verbose headers    [ '__cfduid=d45dd8080640a616a41318e62868d7ee71583502344; expires=Sun, 05-Apr-20 13:45:44 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+16 verbose headers   'cf-ray': '56fc84d22c4ff10e-IAD',
+16 verbose headers   'cache-control': 'public, max-age=300',
+16 verbose headers   etag: 'W/"218b546a44c197bb3e1e8fa94dcc0acf"',
+16 verbose headers   'last-modified': 'Thu, 24 Jan 2019 22:01:12 GMT',
+16 verbose headers   vary: 'accept-encoding, accept',
+16 verbose headers   'cf-cache-status': 'EXPIRED',
+16 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+16 verbose headers   server: 'cloudflare',
+16 verbose headers   'content-encoding': 'gzip' }
+17 silly get cb [ 200,
+17 silly get   { date: 'Fri, 06 Mar 2020 13:45:44 GMT',
+17 silly get     'content-type': 'application/json',
+17 silly get     'transfer-encoding': 'chunked',
+17 silly get     connection: 'keep-alive',
+17 silly get     'set-cookie':
+17 silly get      [ '__cfduid=d45dd8080640a616a41318e62868d7ee71583502344; expires=Sun, 05-Apr-20 13:45:44 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+17 silly get     'cf-ray': '56fc84d22c4ff10e-IAD',
+17 silly get     'cache-control': 'public, max-age=300',
+17 silly get     etag: 'W/"218b546a44c197bb3e1e8fa94dcc0acf"',
+17 silly get     'last-modified': 'Thu, 24 Jan 2019 22:01:12 GMT',
+17 silly get     vary: 'accept-encoding, accept',
+17 silly get     'cf-cache-status': 'EXPIRED',
+17 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+17 silly get     server: 'cloudflare',
+17 silly get     'content-encoding': 'gzip' } ]
+18 verbose get saving web-server to /home/hdickson/.npm/registry.npmjs.org/web-server/.cache.json
+19 silly bugs url http://github.com/tomyan/node-web-server/issues
+20 verbose stack Error: spawn xdg-open ENOENT
+20 verbose stack     at _errnoException (util.js:1022:11)
+20 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+20 verbose stack     at onErrorNT (internal/child_process.js:372:16)
+20 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+20 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
+21 verbose cwd /home/hdickson/Documents/nodesStuffs/node-weather-website
+22 error Linux 5.0.0-1032-azure
+23 error argv "/usr/bin/node" "/usr/bin/npm" "bugs" "web-server"
+24 error node v8.10.0
+25 error npm  v3.5.2
+26 error path xdg-open
+27 error code ENOENT
+28 error errno ENOENT
+29 error syscall spawn xdg-open
+30 error enoent spawn xdg-open ENOENT
+31 error enoent spawn xdg-open ENOENT
+31 error enoent This is most likely not a problem with npm itself
+31 error enoent and is related to npm not being able to find a file.
+32 verbose exit [ 1, true ]
